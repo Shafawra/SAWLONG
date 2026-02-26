@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Toggle Menu</title>
+    <!-- Ionicons CDN -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+:root {
+    --primary-color: #F7E7CE;
+    --secondary-color: #102C26;
+    --accent-color: #D0A837;
+    --footer-color: #383023;
+    --border-radius: 32px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+details {
+    margin-top: 100px;
+    margin-right: 400px;
+    position: relative;
+    width: fit-content;
+    float: right;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+summary:hover {
+    background-color: #ceaf59;
+    transform: scale(1.05);
+}
+
+summary::marker {
+    display: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary ion-icon {
+    font-size: 1.5rem;
+}
+
+details[open] summary {
+    border-radius: 50% 50% 0 0;
+}
+
+ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    overflow: hidden;
+    transform-origin: top center;
+    animation: scaleIn 0.15s ease-out forwards;
+    z-index: 100;
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+li {
+    list-style: none;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+li:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+li a {
+    text-decoration: none;
+    color: var(--secondary-color) ;
+}
+</style>
+</head>
+
+<body>
+    <details>
+        <summary>
+            <ion-icon name="menu-outline"></ion-icon>
+        </summary>
+        <ul>
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+            <li>
+                <a href="#">Produk</a>
+            </li>
+            <li>
+                <span>About</span>
+            </li>
+        </ul>
+    </details>
+</body>
+
+</html>
