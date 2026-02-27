@@ -1,249 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>doc</title>
-      </head>
-    <style>
-        :root {
-            --primary-color: #F7E7CE;
-            --secondary-color: #102C26;
-            --accent-color: #D0A837;
-            --footer-color: #383023;
-            --border-radius: 32px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            padding-top: 100px;
-            background-color: var(--primary-color);
-            width: 100%;
-            font-family: "Mulish", sans-serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-        }
-
-        .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 32px;
-        background-color: var(--secondary-color);
-        width: 100%;
-        z-index: 100;
-        position: fixed;
-        top: 0;
-    }
-
-        .navbar-nav {
-            display: flex;
-            gap: 16px;
-    }
-
-        li { list-style-type: none; }
-
-        .navbar-nav a, .gb-btn a {
-            text-decoration: none;
-            color: white;
-    }
-
-        .logo { width: 180px; }
-
-        .gb-btn {
-            border-radius: var(--border-radius);
-            background-color: var(--accent-color);
-            padding: 12px 28px;
-    }
-
-        nav ul li a { transition: color 0.3s; }
-        nav ul li a:hover { color: var(--accent-color); }
-
-
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-            padding: 32px;
-    }
-
-        .desc-produk {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: start;
-            gap: 16px;
-            margin: 24px;
-    }
-
-        .carousel {
-            position: relative;
-            width: 600px;
-            max-width: 100%;
-            height: 400px;
-            overflow: hidden;
-            border-radius: 24px;
-    }
-
-        .carousel img {
-            border-radius: 24px;
-            width: 100%;
-            object-fit: cover;
-    }
-
-        .slide {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-    }
-
-        .slide.active {
-            opacity: 1;
-            z-index: 1;
-    }
-
-        .carousel button {
-            bottom: 10px;
-            transform: translateY(-50%);
-            background: rgba(0,0,0,0.5);
-            color: var(--accent-color);
-            border: none;
-            border-radius: 1000px;
-            font-size: 24px;
-            padding: 16px;
-            cursor: pointer;
-            z-index: 10;
-        }
-
-        .btn-car {
-            position: absolute;
-            bottom: 0px;
-            right: 20px;
-            display: flex;
-            justify-content: flex-end;
-            gap: 16px;
-        }
-
-        .carousel button:hover {
-            background: rgba(0,0,0,0.8);
-        }
-
-        .desc-produk {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .price {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--secondary-color);
-            padding: 4px 0;
-        }
-
-        .btn-admin {
-            width: 100%;
-            display: block;
-            padding: 16px;
-            border-radius: 16px;
-            border: none;
-            background-color: var(--accent-color);
-        }
-
-        .btn-admin a {
-            text-decoration: none;
-            color: var(--secondary-color);
-            font-weight: bold;
-        }
-
-        /* FOOTER */
-    footer {
-        background-color: var(--footer-color);
-        color: white;
-        margin-top: 96px;
-    }
-
-    .footer-cont {
-        padding: 32px;
-        display: grid;
-        grid-template-columns: 1fr auto auto;
-        gap: 40px;
-    }
-
-    .sawlong {
-        display: grid;
-        gap: 24px;
-    }
-
-    .btn-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        background-color: var(--accent-color);
-        color: var(--secondary-color);
-        padding: 16px 24px;
-        border-radius: 16px;
-        box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.50);
-        cursor: pointer;
-        transition: background-color 0.2s;
-    }
-
-    .btn-footer:hover { background-color: #ceac50; }
-
-    .btn-footer a {
-        color: var(--secondary-color);
-        font-weight: bold;
-        font-size: 16px;
-        text-decoration: none;
-    }
-
-    .sosmed {
-        display: flex;
-        gap: 24px;
-    }
-
-    .icon { transition: transform 0.3s ease-in-out; }
-    .icon:hover { transform: scale(1.5); }
-
-    .side-map {
-        display: grid;
-        gap: 16px;
-        align-content: start;
-    }
-
-    .side-map h3 { margin-bottom: 4px; }
-
-    .side-map a {
-        color: white;
-        text-decoration: none;
-    }
-
-    .tentang {
-        display: grid;
-        gap: 24px;
-        align-content: start;
-    }
-
-    .open, .kontak, .add {
-        display: grid;
-        gap: 6px;
-    }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sawit</title>
+    <link rel="stylesheet" href="style/detailproduk.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    
     <nav class="navbar">
         <img class="logo" src="assets/logo-sl-1.png" alt="logo">
 
@@ -255,6 +22,7 @@
         <div class="gb-btn"><a href="#">Guest Book</a></div>
     </nav>
 
+    <!-- PRODUK -->
     <div class="container">
         <div class="carousel">
             <img src="assets/sawlong-hero.jpeg" class="slide active">
@@ -275,7 +43,9 @@
             </div>
             <div class="price">Rp.8000</div><hr>
 
-            <button class="btn-admin"><a href="#">KONTAK ADMIN</a></button>
+            <div class="btn-admin">
+                <a href="#">Kontak Admin</a>
+            </div>
         </div>
     </div>
 
@@ -285,7 +55,7 @@
             <div class="sawlong">
                     <img class="logo" src="assets/logo-sl-1.png" alt="logo">
                 <div class="sawlong-desc">
-                    <p>SawitLounge merupakan layanan digital yang menyediakan produk dan bibit sawit unggulan hasil riset terpercaya. Kami berfokus pada kualitas, transparansi, dan kemudahan akses bagi mitra serta pelanggan.</p>
+                    <p>SawitLounge merupakan layanan digital yang menyediakan produk dan bibit sawit unggulan hasil riset terpercaya. Kami berfokus pada kualitas, transparansi dan kemudahan akses bagi mitra serta pelanggan.</p>
                 </div>
                 <div class="sosmed">
                     <a href="https://x.com/lensawit" target="_blank"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -334,7 +104,7 @@
                     </svg> </a>       
                 </div>
                 <div class="btn-footer">
-                    <a href="#">Chat Admin</a>
+                    <a href="#">Kontak Admin</a>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_131_432)">
                         <path d="M5 12H19" stroke="#0B292A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -383,33 +153,8 @@
     </footer>
 
 
-
-    <script>
-        document.querySelectorAll(".carousel").forEach(carousel => {
-
-        const slides = carousel.querySelectorAll(".slide");
-        const nextBtn = carousel.querySelector(".next");
-        const prevBtn = carousel.querySelector(".prev");
-
-        let index = 0;
-
-        function showSlide(i) {
-        slides.forEach(slide => slide.classList.remove("active"));
-        slides[i].classList.add("active");
-        }
-
-        nextBtn.addEventListener("click", () => {
-        index = (index + 1) % slides.length;
-        showSlide(index);
-        });
-
-        prevBtn.addEventListener("click", () => {
-        index = (index - 1 + slides.length) % slides.length;
-        showSlide(index);
-        });
-
-        });
-    </script>
+    <Script src="js/detailproduk.js" defer></Script>
+            
 
 </body>
 </html>
