@@ -22,4 +22,12 @@ headers.forEach(header => {
     });
 });
 
+document.addEventListener("click", function (e) {
+  const faqSection = document.querySelector(".faq-section");
+
+  if (!faqSection.contains(e.target)) {
+      items.forEach(i => i.classList.remove("active"));
+  }
+});
+
 

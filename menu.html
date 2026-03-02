@@ -10,15 +10,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-        <nav class="navbar">
-            <img class="logo" src="assets/logo-sl-1.png" alt="logo">
-                <ul class="navbar-nav">
-                    <li><a href="home.html">HOME</a></li>
-                    <li><a href="menu.html">MENU</a></li>
-                    <li><a href="#">PRODUCT</a></li>
-                </ul>
-            <div class="gb-btn"><a href="#">Guest Book</a></div>
-        </nav>
+    <nav class="navbar">
+        <img class="logo" src="assets/logo-sl-1_optimized.webp" alt="logo">
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+            <!-- ham -->
+            <svg id="icon-ham" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                 fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M4 6l16 0"/><path d="M4 12l16 0"/><path d="M4 18l16 0"/>
+            </svg>
+
+            <!-- close -->
+            <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                 fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 style="display:none">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M18 6l-12 12"/><path d="M6 6l12 12"/>
+            </svg>
+          </button>
+
+            <ul class="navbar-nav">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="#">PRODUCT</a></li>
+            </ul>
+        <div class="gb-btn"><a href="#">Guest Book</a></div>
+    </nav>
 
     <div class="container">
 
@@ -28,7 +46,7 @@
         <!-- TOP PICKS CARD -->
         <div class="card1">
             <div class="tp-card">
-                <img class="tp-img" src="assets/kopi susu.png" alt="cappucino">
+                <img class="tp-img" src="assets/kopi susu_optimized.webp" alt="cappucino">
                 <div class="desc">
                     <h1>CAPPUCINO</h1>
                     <p>Perpaduan istimewa kopi robusta krimmer, susu, dan aroma caramel yang menghasilkan minuman khas cita rasa ala Italia, dengan foam yang lembut dan tebal!</p>
@@ -42,7 +60,7 @@
                 </div>
             </div>
             <div class="tp-card">
-                <img class="tp-img" src="assets/mineral.png" alt="mineral">
+                <img class="tp-img" src="assets/mineral_optimized.webp" alt="mineral">
                 <div class="desc">
                     <h1>MINERAL</h1>
                     <p>Dari sumber mata air yang terpilih dengan segala kemurnian dan kandungan mineral alamai yang terpelihara.</p>
@@ -63,7 +81,7 @@
         <!-- current menu -->
         <div class="card2">
             <div class="cm-card">
-                <img class="cm-img" src="assets/kopi hitam.png" alt="KopiHitam">
+                <img class="cm-img" src="assets/kopi hitam_optimized.webp" alt="KopiHitam">
                 <h1>KOPI HITAM</h1>
                 <div class="desc-cm">
                     <p>Mulai hari Anda dengan Kopi hitam instan terbuat dari 100% biji kopi robusta pilihan yang diproses dengan mutu tinggi!</p>
@@ -77,7 +95,7 @@
                 </div>
             </div>
             <div class="cm-card">
-                <img class="cm-img" src="assets/kopi milo.png" alt="KopiMilo">
+                <img class="cm-img" src="assets/kopi milo_optimized.webp" alt="KopiMilo">
                 <h1>COFFE MILO</h1>
                 <div class="desc-cm">
                     <p>Perpaduan bubuk cokelat milo dengan bubuk kopi instan menghasilkan coffee milo dengan cita rasa khas yang membuat Anda ketagihan!</p>
@@ -91,7 +109,7 @@
                 </div>
             </div>
             <div class="cm-card">
-                <img class="cm-img" src="assets/teh tarik.png" alt="TehTarik">
+                <img class="cm-img" src="assets/teh tarik_optimized.webp" alt="TehTarik">
                 <h1>TEH TARIK</h1>
                 <div class="desc-cm">
                     <p>Campuran teh dengan susu dan krimer nabati memberikan cita rasa minuman dari Asia khas orang Melayu, unik dan nikmat!</p>
@@ -105,7 +123,7 @@
                 </div>
             </div>
             <div class="cm-card">
-                <img class="cm-img" src="assets/milo.png" alt="milo">
+                <img class="cm-img" src="assets/milo_optimized.webp" alt="milo">
                 <h1>MILO</h1>
                 <div class="desc-cm">
                     <p>Minuman cokelat dengan paduan malt yang unik bercampur dengan susu bubuk skim yang memberikan rasa yang enak, “smooth and rich”.</p>
@@ -119,7 +137,7 @@
                 </div>
             </div>
             <div class="cm-card">
-                <img class="cm-img" src="assets/aira panas.png" alt="HotWater">
+                <img class="cm-img" src="assets/aira panas_optimized.webp" alt="HotWater">
                 <h1>AIR HANGAT/PANAS</h1>
                 <div class="desc-cm">
                     <p>Air mineral panas / hangat.</p>
@@ -133,7 +151,7 @@
                 </div>
             </div>
             <div class="cm-card">
-                <img class="cm-img" src="assets/mineral.png" alt="mineral">
+                <img class="cm-img" src="assets/mineral_optimized.webp" alt="mineral">
                 <h1>MINERAL</h1>
                 <div class="desc-cm">
                     <p>Dari sumber mata air yang terpilih dengan segala kemurnian dan kandungan mineral alamai yang terpelihara.</p>
@@ -147,7 +165,7 @@
                 </div>
             </div>
             <div class="cm-card">
-                <img class="cm-img" src="assets/chococino.png" alt="chocochino">
+                <img class="cm-img" src="assets/chococino_optimized.webp" alt="chocochino">
                 <h1>CHOCOCHINO</h1>
                 <div class="desc-cm">
                     <p>Gimana ya kalau kopi, coklat, dan susu bertemu jadi satu? Temukan perpaduan cita rasa terbaik ini di Chococino!</p>
@@ -161,7 +179,7 @@
                 </div>
             </div>
             <div class="cm-card">
-                <img class="cm-img" src="assets/teh.png" alt="tea">
+                <img class="cm-img" src="assets/teh_optimized.webp" alt="tea">
                 <h1>TEA</h1>
                 <div class="desc-cm">
                     <p>Minuman dengan aroma dan cita rasa dari 100% daun teh murni!</p>
@@ -175,7 +193,7 @@
                 </div>
             </div>
             <div class="cm-card">
-                <img class="cm-img" src="assets/kopi selatan.png" alt="KopiSelatan">
+                <img class="cm-img" src="assets/kopi selatan_optimized.webp" alt="KopiSelatan">
                 <h1>KOPI SELATAN</h1>
                 <div class="desc-cm">
                     <p>Perpaduan kopi pilihan dengan susu creamy yang lembut, menghadirkan rasa seimbang, halus, dan mudah dinikmati kapan saja.</p>
@@ -195,7 +213,7 @@
         <footer>
             <div class="footer-cont">
                 <div class="sawlong">
-                        <img class="logo" src="assets/logo-sl-1.png" alt="logo">
+                        <img class="logo" src="assets/logo-sl-1_optimized.webp" alt="logo">
                     <div class="sawlong-desc">
                         <p>SawitLounge merupakan layanan digital yang menyediakan produk dan bibit sawit unggulan hasil riset terpercaya. Kami berfokus pada kualitas, transparansi dan kemudahan akses bagi mitra serta pelanggan.</p>
                     </div>

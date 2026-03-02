@@ -197,6 +197,7 @@ nav ul li a:hover { color: var(--accent-color); }
     cursor: pointer;
     border: none;
 }
+
 .container {
     position: relative;
     overflow: hidden;
