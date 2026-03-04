@@ -340,7 +340,8 @@ nav ul li a:hover { color: var(--accent-color); }
 /* FILTER BTN */
 .filter-btns {
     display: flex;
-    gap: 16px;
+    gap: 16px; 
+    justify-content: center;
 }
 
 .filter-btns button {
