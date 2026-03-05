@@ -87,6 +87,8 @@ body {
 .navbar-nav li a.active::after {
     width: 100%;
 }
+
+
 @media (max-width: 768px) {
     .navbar-nav {
         position: absolute;
