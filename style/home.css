@@ -282,7 +282,8 @@ nav ul li a:hover { color: var(--accent-color); }
 }
 
 .ch-desc:hover .ch-text {
-    display: block;   
+    opacity: 1;
+    display: block;
 }
 
 .ch-text {
@@ -901,16 +902,21 @@ footer {
 
     /* Hero cards */
     .hero-cards {
-        /* grid-template-columns: repeat(2, 1fr); */
         display: flex;
         overflow-x: scroll;
         padding: 0 16px;
-        gap: 12px;
+        gap: 24px;
         bottom: 20px;
+        scrollbar-width: none; 
+        -ms-overflow-style: none;
     }
 
-    .hero-cards .card-hero:last-child { display: none; }
-    .card-hero { height: 150px; }
+    .card-hero { 
+        height: 150px; 
+        min-width: 200px;
+        scroll-snap-align: start;
+    }
+
     .ch-desc h6, .ch-text { font-size: 12px; }
 
     /* Headings */
