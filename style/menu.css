@@ -569,7 +569,15 @@ footer {
     }
 
     .menu-toggle { display: block; }
-    .gb-btn { display: none; }
+
+    .gb-btn {
+        width: 100%;
+        display: block;
+        padding: 0 16px;
+    }
+    .gb-btn a {
+        width: 100%;
+    }
 
     .navbar-nav {
         position: absolute;
@@ -585,7 +593,7 @@ footer {
     }
 
     .navbar-nav.show { display: flex; }
-    .navbar-nav li { padding: 12px; width: 100%; text-align: left; }
+    .navbar-nav li { padding: 16px; width: 100%; text-align: left; }
     .navbar-nav li a { font-size: 16px; }
 
     /* Headlines */

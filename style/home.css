@@ -864,7 +864,15 @@ footer {
     .navbar { padding: 14px 20px; }
     .navbar .logo { width: 130px; animation: none; }
     .menu-toggle { display: block; }
-    .gb-btn { display: none; }
+
+    .gb-btn {
+        width: 100%;
+        display: block;
+        padding: 0 16px;
+    }
+    .gb-btn a {
+        width: 100%;
+    }
 
     .navbar-nav {
         position: absolute;
@@ -879,7 +887,7 @@ footer {
         display: none;
     }
     .navbar-nav.show { display: flex; }
-    .navbar-nav li { padding: 12px; width: 100%; text-align: left; }
+    .navbar-nav li { padding: 16px; width: 100%; text-align: left; }
     .navbar-nav li a { font-size: 16px; }
 
     /* Hero buttons */
