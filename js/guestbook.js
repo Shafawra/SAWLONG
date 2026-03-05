@@ -16,3 +16,13 @@ window.addEventListener("click", function(e) {
     modal.style.display = "none";
   }
 });
+
+const form = document.getElementById("guestbookForm");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault(); // biar ga reload
+
+    alert("Terima kasih! Pesan kamu sudah terkirim.");
+
+    form.reset(); // kosongin form lagi
+});
