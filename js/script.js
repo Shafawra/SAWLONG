@@ -2,7 +2,7 @@ console.log("halo");
 
 // NAVBAR TOGGLE 
 const toggle = document.getElementById("menu-toggle");
-const nav = document.querySelector(".navbar-nav");
+const nav = document.querySelector(".mobile-menu");
 
 toggle.addEventListener("click", () => {
   nav.classList.toggle("show");

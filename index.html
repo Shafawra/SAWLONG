@@ -17,8 +17,11 @@
     <div class="container">
         <div class="hero-container">
             <nav class="navbar">
-                <img class="logo" src="assets/logo-sl-1_optimized.webp" alt="logo">
+                <a class="logo">
+                    <img src="assets/logo-sl-1_optimized.webp" alt="logo">
+                </a>
 
+                
                 <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
                     <!-- ham -->
                     <svg id="icon-ham" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
@@ -36,13 +39,17 @@
                     </svg>
                   </button>
 
-                    <ul class="navbar-nav">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="menu.html">MENU</a></li>
-                        <li><a href="produk.html">PRODUCT</a></li>
-                        <div class="gb-btn"><a href="#" id="openGuestBook">Guest Book</a></div>
-                    </ul>
-                    
+                    <div class="mobile-menu" id="mobile-menu">
+                        <ul class="navbar-nav">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="menu.html">MENU</a></li>
+                            <li><a href="produk.html">PRODUCT</a></li>
+                        </ul>
+                        
+                        <div class="gb-btn">
+                            <a href="#" id="openGuestBook">Guest Book</a>
+                        </div>
+                    </div>
             </nav>
 
 
