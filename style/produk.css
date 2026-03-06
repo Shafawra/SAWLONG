@@ -22,22 +22,25 @@ body {
 
 /* NAVBAR */
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 22px 60px;
     background: var(--secondary-color);
     opacity: 85%;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
 }
 
 .navbar-nav {
     list-style: none;
     display: flex;
     gap: 42px;
+    padding: 0;
+    margin: 0 auto;
     align-items: center;
 }
 
@@ -77,34 +80,17 @@ body {
 .navbar-nav li a.active::after {
     width: 100%;
 }
-@media (max-width: 768px) {
-    .navbar-nav {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background: rgba(0, 0, 0, 0.85);
-        backdrop-filter: blur(10px);
-        flex-direction: column;
-        width: 100%;
-        padding: 20px 0;
-        display: none;
-    }
 
-    .navbar-nav li {
-        padding: 12px 0;
-    }
-
-    .navbar-nav li a {
-        font-size: 16px;
-    }
-
-    .navbar-nav.show {
-        display: flex;
-    }
+.mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin-left: 32px;
 }
 
 /* LOGO */
-.logo { width: 180px; }
+.logo img { width: 180px; }
 
 @keyframes logoFloat {
     0% {
@@ -528,12 +514,7 @@ footer {
 
     /* Navbar */
     .navbar { padding: 14px 20px; }
-
-    .navbar .logo {
-        width: 130px;
-        animation: none;
-    }
-
+    .navbar .logo { width: 130px; animation: none; }
     .menu-toggle { display: block; }
 
     .gb-btn {
@@ -545,22 +526,32 @@ footer {
         width: 100%;
     }
 
-    .navbar-nav {
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background: rgba(0, 0, 0, 0.92);
+        background: rgba(0,0,0,0.92);
         backdrop-filter: blur(10px);
-        flex-direction: column;
         padding: 20px 0;
-        gap: 0;
-        display: none;
-    }
+        margin-left: 0;
+      }
 
-    .navbar-nav.show { display: flex; }
+    .navbar-nav {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        margin: 0;
+    }
+    
     .navbar-nav li { padding: 16px; width: 100%; text-align: left; }
     .navbar-nav li a { font-size: 16px; }
+
+    .mobile-menu.show {
+        display: flex;
+    }
 
     /* Headlines */
     .headline1,
