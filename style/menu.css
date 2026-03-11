@@ -543,10 +543,9 @@ footer {
 }
 
 /* RESPONSIVE */
-
 @media (max-width: 768px) {
 
-    /* Navbar */
+    /* NAVBAR */
     .navbar { padding: 14px 20px; }
     .navbar .logo { width: 130px; animation: none; }
     .menu-toggle { display: block; }
@@ -587,11 +586,10 @@ footer {
         display: flex;
     }
 
-    /* Headlines */
+    /* HEADLINE */
     .headline1,
     .headline1 h1 { margin: 40px 16px 30px; font-size: clamp(1.5rem, 6vw, 2.2rem); }
 
-    /* Top picks */
     .card1 {
         grid-template-columns: 1fr;
     }
@@ -609,13 +607,12 @@ footer {
         margin: 0 auto;
     }
 
-    /* Current menu */
     .card2 { grid-template-columns: 1fr; margin: 0 16px; gap: 40px; }
     .cm-img { height: 200px; }
 
     .price-tag { display: flex; justify-content: space-between; }
 
-    /* Footer */
+    /* FOOTER */
     footer { background-attachment: scroll; padding: 48px 0 32px; }
     .footer-cont { grid-template-columns: 1fr; gap: 24px; padding: 20px; }
     .sawlong { grid-column: auto; }

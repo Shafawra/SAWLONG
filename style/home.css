@@ -428,7 +428,6 @@ nav ul li a:hover { color: var(--accent-color); }
 }
 
 /* CARD MENU PREVIEW */
-
 .headline1,
 .headline1 h1 {
     position: relative;
@@ -602,7 +601,6 @@ nav ul li a:hover { color: var(--accent-color); }
 }
 
 /* FAQ */
-
 .faq-section {
     width: 100%;
     margin-bottom: 96px;
@@ -848,7 +846,7 @@ footer {
 
 @media (max-width: 768px) {
 
-    /* Navbar */
+    /* NAVBAR */
     .navbar { padding: 14px 20px; }
     .navbar .logo { width: 130px; animation: none; }
     .menu-toggle { display: block; }
@@ -889,7 +887,7 @@ footer {
         display: flex;
     }
 
-    /* Hero buttons */
+    /* HERO */
     .hero-btns {
         bottom: auto;
         top: 55%;
@@ -902,7 +900,6 @@ footer {
     }
     .hero-btns a { width: 100%; max-width: 260px; font-size: 13px; padding: 13px 24px; }
 
-    /* Hero cards */
     .hero-cards {
         display: flex;
         overflow-x: scroll;
@@ -922,7 +919,7 @@ footer {
     .ch-desc { padding: 8px; }
     .ch-desc h6, .ch-text { font-size: 12px; }
 
-    /* Headings */
+    /* HEADING */
     .headline1,
     .headline1 h1 { margin: 40px 16px 30px; font-size: clamp(1.5rem, 6vw, 2.2rem); letter-spacing: 2px; }
 
@@ -945,7 +942,7 @@ footer {
     }
     .grid-gall img[style] { grid-column: unset !important; grid-row: unset !important; }
 
-    /* Footer */
+    /* FOOTER */
     footer { background-attachment: scroll; padding: 48px 0 32px; }
     .footer-cont { grid-template-columns: 1fr; gap: 24px; padding: 20px; }
     .sawlong { grid-column: auto; }

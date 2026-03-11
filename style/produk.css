@@ -360,7 +360,6 @@ nav ul li a:hover { color: var(--accent-color); }
     border: 2px solid var(--accent-color);
     color: var(--secondary-color);
 
-    /* background: var(--accent-color); */
 }
 
 .f-btn.active {
@@ -526,7 +525,7 @@ footer {
 
 @media (max-width: 768px) {
 
-    /* Navbar */
+    /* NAVBAR */
     .navbar { padding: 14px 20px; }
     .navbar .logo { width: 130px; animation: none; }
     .menu-toggle { display: block; }
@@ -567,7 +566,7 @@ footer {
         display: flex;
     }
 
-    /* Headlines */
+    /* HEADLINE */
     .headline1,
     .headline1 h1 { margin: 40px 16px 30px; font-size: clamp(1.5rem, 6vw, 2.2rem); 
     }
@@ -583,7 +582,7 @@ footer {
         height: 250px;
     }
 
-    /* Footer */
+    /* FOOTER */
     footer { background-attachment: scroll; padding: 48px 0 32px; }
     .footer-cont { grid-template-columns: 1fr; gap: 24px; padding: 20px; }
     .sawlong { grid-column: auto; }

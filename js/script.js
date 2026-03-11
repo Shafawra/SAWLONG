@@ -1,5 +1,3 @@
-console.log("halo");
-
 // NAVBAR TOGGLE 
 const toggle = document.getElementById("menu-toggle");
 const nav = document.querySelector(".mobile-menu");

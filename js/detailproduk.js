@@ -24,9 +24,9 @@ document.querySelectorAll(".carousel").forEach(carousel => {
     });
 
     // NAVBAR TOGGLE 
-const toggle = document.getElementById("menu-toggle");
-const nav = document.querySelector(".navbar-nav");
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.querySelector(".navbar-nav");
 
-toggle.addEventListener("click", () => {
-  nav.classList.toggle("show");
-});
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("show");
+    });
