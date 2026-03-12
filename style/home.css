@@ -149,11 +149,9 @@ body {
     align-items: center;
     justify-content: center;
     transition: all 0.35s ease;
-    box-shadow: 0 8px 20px rgba(201, 142, 13, 0.35);
 }
 .gb-btn a:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 28px rgba(201, 142, 13, 0.55);
     background: linear-gradient(135deg, #f2c94c, #c98e0d);
 }
 .gb-btn a:active {
@@ -339,12 +337,10 @@ nav ul li a:hover { color: var(--accent-color); }
 .btn-cont {
     background: linear-gradient(135deg, #c98e0d, #f2c94c);
     color: #0b292a;
-    box-shadow: 0 10px 24px rgba(201, 142, 13, 0.45);
 }
 
 .btn-cont:hover {
     transform: translateY(-4px);
-    box-shadow: 0 16px 34px rgba(201, 142, 13, 0.65);
 }
 
 .btn-gall {
@@ -390,10 +386,6 @@ nav ul li a:hover { color: var(--accent-color); }
     }
 }
 
-.btn-cont,
-.gb-btn a {
-    animation: softPulse 3.5s infinite;
-}
 
 .hero-btns a,
 .gb-btn a {
@@ -418,10 +410,6 @@ nav ul li a:hover { color: var(--accent-color); }
     transition: all 0.6s ease;
 }
 
-.hero-btns a:hover::before,
-.gb-btn a:hover::before {
-    left: 120%;
-}
 .hero-btns a:hover,
 .gb-btn a:hover {
     transform: translateY(-4px) scale(1.03);
@@ -542,8 +530,6 @@ nav ul li a:hover { color: var(--accent-color); }
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
-
-.cm-card:hover { transform: scale(1.05); }
 
 .cm-img {
     width: 100%;
@@ -730,22 +716,11 @@ footer {
     padding: 14px 26px;
     border-radius: 999px;
 
-    background: linear-gradient(
-        135deg,
-        #f5c46b,
-        #c98e0d,
-        #8b5e00
-    );
+    background: var(--accent-color);
 
     cursor: pointer;
     position: relative;
     overflow: hidden;
-
-    box-shadow:
-        0 10px 30px rgba(201, 142, 13, 0.35),
-        inset 0 0 0 rgba(255,255,255,0);
-
-    transition: all 0.4s ease;
 }
 
 .btn-footer a {
@@ -765,48 +740,20 @@ footer {
     transition: transform 0.4s ease;
 }
 
-.btn-footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -120%;
-    width: 120%;
-    height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255,255,255,0.6),
-        transparent
-    );
-    transform: skewX(-20deg);
-}
-
 .btn-footer:hover {
     transform: translateY(-3px) scale(1.03);
-    box-shadow:
-        0 16px 40px rgba(201, 142, 13, 0.5),
-        inset 0 0 20px rgba(255,255,255,0.25);
 }
 
 .btn-footer:hover svg {
     transform: translateX(6px);
 }
 
-.btn-footer:hover::before {
-    animation: shineMove 0.9s ease forwards;
-}
 
 .btn-footer:active {
     transform: translateY(0) scale(0.97);
-    box-shadow:
-        0 6px 16px rgba(0,0,0,0.3);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes shineMove {
-    to {
-        left: 120%;
-    }
-}
 
 .sosmed {
     display: flex;

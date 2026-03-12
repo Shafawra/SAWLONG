@@ -31,18 +31,6 @@ document.addEventListener("click", function (e) {
 });
 
 
-// PRODUK
-function filterProduct(category) {
-  const cards = document.querySelectorAll('.product')
-
-  cards.forEach(card => {
-      card.style.display =
-          category === 'all' || card.classList.contains(category)
-              ? ''
-              : 'none'
-  })
-}
-
 // BTN CAT
 function filterProduct(category) {
 
@@ -58,3 +46,11 @@ function filterProduct(category) {
       }
   });
 }
+
+
+// CARD 
+document.querySelectorAll('.product').forEach(card => {
+  card.addEventListener('click', () => {
+    card.querySelector('.next-btn a').click();
+  });
+});
